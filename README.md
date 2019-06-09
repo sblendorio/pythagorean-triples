@@ -31,7 +31,7 @@ Ciò è stato implementato tramite una struttura a *coda* (**queue**):
     BEGIN
         WHILE count < 1000 DO
             INC(count);
-          Pull(value);
+            Pull(value);
             IF count >= 981 THEN
                INC(lines);
                Assign(output[lines], value);
