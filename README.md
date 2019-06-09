@@ -63,7 +63,7 @@ Per la rilevazione del tempo utilizzato è stato necessario (non avendo Turbo Mo
     END GetTime;
 
 Tramite la chiamata [**BDOS**](https://www.seasip.info/Cpm/bdos.html) viene richiamata la routine di sistema (disponibile solo nel CP/M 3.0, o "plus", e non nelle release precedenti come la 2.2) che restituisce:
-- **IORESULT**, che contiene i secondi in formato BCD
+- **IORESULT**, che contiene i secondi in formato [**BCD**](https://it.wikipedia.org/wiki/Binary-coded_decimal)
 - la variabile **dat**, che contiene nei 16 bit meno significativi, ore e minuti, concatenati e in formato BCD (quindi "packed BCD")
 
 Tramite una funzione che fa uso di operatori *bitwise* i valori BCD vengono convertiti in decimale:
