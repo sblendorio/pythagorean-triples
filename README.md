@@ -35,9 +35,9 @@ Ciò è stato implementato tramite una struttura a *coda* (**queue**):
             IF count >= 981 THEN
                INC(lines);
                Assign(output[lines], value);
-          END;
-          GetNext3(value, m, r);
-          FOR i := 1 TO 3 DO
+            END;
+            GetNext3(value, m, r);
+            FOR i := 1 TO 3 DO
                 Push(r[i])
             END
         END
