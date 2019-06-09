@@ -47,8 +47,8 @@ Da notare il limite (1000) imposto nel ciclo *WHILE*: senza questo limite non ci
 
 **NOTA**: Per ottenere una *Depth Search* (ricerca in profondità), ammesso che l'albero da esplorare sia *finito*, è sufficiente utilizzare una struttura dati a *pila* (**push-pop**) anziché a *coda* (**push-pull**).
 
-## CP/M Plus (3.0) e gestione del tempo: interrupt BDOS 105
-Per la rilevazione del tempo utilizzato è stato necessario (non avendo Turbo Modula-2 funzioni native in tal senso) ricorrere agli interrupt di CP/M, in particolare all'interrupt **105** della componente **BDOS**:
+## CP/M Plus (3.0) e gestione del tempo: interrupt [BDOS 105](https://www.seasip.info/Cpm/bdos.html#105)
+Per la rilevazione del tempo utilizzato è stato necessario (non avendo Turbo Modula-2 funzioni native in tal senso) ricorrere agli interrupt di CP/M, in particolare all'interrupt [**105**](https://www.seasip.info/Cpm/bdos.html#105) della componente [**BDOS**](https://www.seasip.info/Cpm/bdos.html):
 
     PROCEDURE GetTime(): LONGINT;
     CONST GetDT = 105; (* BDOS Function *)
@@ -62,7 +62,7 @@ Per la rilevazione del tempo utilizzato è stato necessario (non avendo Turbo Mo
         RETURN LONG(second) + (LONG(minute)*60L) + (LONG(hour)*3600L)
     END GetTime;
 
-Tramite la chiamata **BDOS** viene richiamata la routine di sistema (disponibile solo nel CP/M 3.0, o "plus", e non nelle release precedenti come la 2.2) che restituisce:
+Tramite la chiamata [**BDOS**](https://www.seasip.info/Cpm/bdos.html) viene richiamata la routine di sistema (disponibile solo nel CP/M 3.0, o "plus", e non nelle release precedenti come la 2.2) che restituisce:
 - **IORESULT**, che contiene i secondi in formato BCD
 - la variabile **dat**, che contiene nei 16 bit meno significativi, ore e minuti, concatenati e in formato BCD (quindi "packed BCD")
 
