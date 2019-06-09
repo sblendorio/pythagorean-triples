@@ -12,8 +12,8 @@ La scelta è dettata principalmente da ragioni di interesse storico: questo comp
   - [**p-mcode.com**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/p-mcode.com) Eseguibile compilato in "mcode"
   - [**p-native.com**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/p-native.com) Eseguibile compilato in codice nativo
 - **dists** - Raccolta di immagini di dischi CP/M per Commodore 64 (con scheda Z80) e Commodore 128 (incluso codice di boot di sistema)
-  - [**pythagoras64.d64**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/p-native.com) - Disco per C64 (con scheda Z80), include sorgente e binari
-  - [**pythagoras128.d64**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/p-native.com) - Disco per C128, include sorgente, binari e sistema minimale per il boot
+  - [**pythagoras64.d64**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/pythagoras64.d64) - Disco per C64 (con scheda Z80), include sorgente e binari
+  - [**pythagoras128.d64**](https://github.com/sblendorio/pythagorean-triples/blob/master/binary/pythagoras128.d64) - Disco per C128, include sorgente, binari e sistema minimale per il boot
 
 ## Tecnica utilizzata: *Breadth Search*
 La soluzione consiste nell'applicazione del *teorema di Barning*, che consente di ottenere tutte le terne pitagoriche avendo come input una di partenza, che tipicamente è la minimale *(3, 4, 5)*. Ciò implica l'esplorazione di un albero infinito, pertanto diventa impossibile una sua esplorazione in termini di "Depth-Search", dato che questa tecnica presuppone un numero di nodi *finito*:
