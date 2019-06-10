@@ -54,8 +54,8 @@ END Pull;
 
 PROCEDURE Init();
 BEGIN
-    qtop := 0;
-    qbottom := 0;
+    qtop := 1;
+    qbottom := 1;
     count := 0;
     lines := 0;
 
